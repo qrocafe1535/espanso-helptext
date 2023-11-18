@@ -1,12 +1,6 @@
-# espanso match file
-
-# For a complete introduction, visit the official docs at: https://espanso.org/docs/
-
-# You can use this file to define the base matches (aka snippets)
-# that will be available in every application when using espanso.
-
-# Matches are substitution rules: when you type the "trigger" string
-# it gets replaced by the "replace" string.
+# =========================================================== #
+#                     ESPANSO CONFIG                          #
+# =========================================================== #
 
 # Variaveis globais
 global_vars: #define o tempo.
@@ -49,73 +43,71 @@ matches:
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
 
+  ############## ATENDIMENTO #################
 
-############## ATENDIMENTO #################
-
-##### inatividade
+  ##### inatividade
   - trigger: ":20min"
     replace: |
-              Poxa! 😕
-              O atendimento está sendo finalizado devido a falta de comunicação e inatividade. Estamos à sua disposição das 08:00 às 22:00. Seu provedor de internet, AraujoSat, agradece a preferência, {{tempo}}!
+      Poxa! 😕
+      O atendimento está sendo finalizado devido a falta de comunicação e inatividade. Estamos à sua disposição das 08:00 às 22:00. Seu provedor de internet, AraujoSat, agradece a preferência, {{tempo}}!
 
-
-##### final do expediente
+  ##### final do expediente
   - trigger: ":10hrs"
     replace: "Devido ao final do expediente 22:00 horas o sistema esta finalizando o chat, se o problema persistir entrar em contato por este mesmo canal a partir das 8 Horas, para que seja reavaliado o problema. {{tempo}}"
 
-##### ABERTA 0S
+  ##### ABERTA 0S
   - trigger: ":os"
     replace: "Foi aberta uma ordem de serviço e o prazo contratual para a realização da visita é de até 48 horas úteis. Estamos empenhados em realizar a visita o quanto antes, mas por enquanto, posso ajudar em mais alguma coisa?"
 
-##### DADOS DO CLIENTE 
+  ##### DADOS DO CLIENTE
   - trigger: ":dados"
     replace: |
-              Será necessário antes, confirmar alguns dados do titular do contrato tudo bem?
-              1 - CPF:
-              2 - NOME COMPLETO:
-              3 - ENDEREÇO:
-##### ENCERRAR ATENDIMENTO
+      Será necessário antes, confirmar alguns dados do titular do contrato tudo bem?
+      1 - CPF:
+      2 - NOME COMPLETO:
+      3 - ENDEREÇO:
+  ##### ENCERRAR ATENDIMENTO
   - trigger: ":por nada"
     replace: "A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!"
-##### ALGO MAIS?
+  ##### ALGO MAIS?
   - trigger: ":algo mais"
     replace: |
-              Por hora te ajudo mais alguma solicitação?
-#### Local fora.
+      Por hora te ajudo mais alguma solicitação?
+  #### Local fora.
   - trigger: ":geral"
     replace: |
-              A falta de acesso ou instabilidade na conexão, foi devido a um problema na localidade. Já designamos uma equipe para verificar.
-              No momento só aguardar.
-##### Gerador de senhas
+      A falta de acesso ou instabilidade na conexão, foi devido a um problema na localidade. Já designamos uma equipe para verificar.
+      No momento só aguardar.
+  ##### Gerador de senhas
   - trigger: ":pass"
     replace: "{{pass}}"
-#### Energia.
+  #### Energia.
   - trigger: ":energia"
     replace: |
-              Prezado(a) Cliente,
-              Informamos que, devido a uma falta de energia na sua localidade, a sua conexão à Internet encontra-se temporariamente indisponível. Estamos trabalhando para resolver a situação o mais rápido possível. Lamentamos o inconveniente e agradecemos pela compreensão.
-              A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!
-#### Acesso lento.
+      Prezado(a) Cliente,
+      Informamos que, devido a uma falta de energia na sua localidade, a sua conexão à Internet encontra-se temporariamente indisponível. Estamos trabalhando para resolver a situação o mais rápido possível. Lamentamos o inconveniente e agradecemos pela compreensão.
+      A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!
+  #### Acesso lento.
   - trigger: ":triagem"
     replace: |
-              Prezado(a) Cliente, poderia realizar os procedimentos de triagem inicial?
-              
-              1 - *Reinicie seus equipamentos:* 
-              - Desligue e os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
-              - Reinicie os dispositivos que apresentam o problema.
-              2 - *Reconecte e verifique:* 
-              - Reconecte os dispositivos.
-              - Verifique se o problema persiste.
-              
-              Essas etapas simples podem resolver problemas comuns. Se o problema persistir, por favor explique com mais detalhes como ele está ocorrendo.
+      Prezado(a) Cliente, poderia realizar os procedimentos de triagem inicial?
 
-#### Informe melhor o problema por favor.
+      1 - *Reinicie seus equipamentos:* 
+      - Desligue e os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
+      - Reinicie os dispositivos que apresentam o problema.
+      2 - *Reconecte e verifique:* 
+      - Reconecte os dispositivos.
+      - Verifique se o problema persiste.
+
+      Essas etapas simples podem resolver problemas comuns. Se o problema persistir, por favor explique com mais detalhes como ele está ocorrendo.
+
+  #### Informe melhor o problema por favor.
   - trigger: ":detalhes"
     replace: |
-              Após análise, não detectamos problemas nos equipamentos da sua residência.
-              
-              Para oferecer uma assistência mais precisa, solicitamos que forneça detalhes adicionais sobre o problema que está enfrentando. Por favor, descreva com mais detalhes como esse problema ocorre, quais atividades são mais afetadas e se há horários específicos em que o problema ocorre.
+      Após análise, não detectamos problemas nos equipamentos da sua residência.
 
-#### Informe melhor o problema por favor.
+      Para oferecer uma assistência mais precisa, solicitamos que forneça detalhes adicionais sobre o problema que está enfrentando. Por favor, descreva com mais detalhes como esse problema ocorre, quais atividades são mais afetadas e se há horários específicos em que o problema ocorre.
+
+  #### Informe melhor o problema por favor.
   - trigger: ":ajustes"
     replace: Foram realizados alguns ajustes nos equipamentos, por gentileza, teste novamente sua conexão neste momento e nos informe se a situação melhorou. Estamos aqui para garantir que você tenha a melhor experiência possível.
