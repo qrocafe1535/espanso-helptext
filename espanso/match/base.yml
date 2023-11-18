@@ -95,3 +95,27 @@ matches:
               Prezado(a) Cliente,
               Informamos que, devido a uma falta de energia na sua localidade, a sua conexão à Internet encontra-se temporariamente indisponível. Estamos trabalhando para resolver a situação o mais rápido possível. Lamentamos o inconveniente e agradecemos pela compreensão.
               A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!
+#### Acesso lento.
+  - trigger: ":triagem"
+    replace: |
+              Prezado(a) Cliente, poderia realizar os procedimentos de triagem inicial?
+              
+              1 - *Reinicie seus equipamentos:* 
+              - Desligue e os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
+              - Reinicie os dispositivos que apresentam o problema.
+              2 - *Reconecte e verifique:* 
+              - Reconecte os dispositivos.
+              - Verifique se o problema persiste.
+              
+              Essas etapas simples podem resolver problemas comuns. Se o problema persistir, por favor explique com mais detalhes como ele está ocorrendo.
+
+#### Informe melhor o problema por favor.
+  - trigger: ":detalhes"
+    replace: |
+              Após análise, não detectamos problemas nos equipamentos da sua residência.
+              
+              Para oferecer uma assistência mais precisa, solicitamos que forneça detalhes adicionais sobre o problema que está enfrentando. Por favor, descreva com mais detalhes como esse problema ocorre, quais atividades são mais afetadas e se há horários específicos em que o problema ocorre.
+
+#### Informe melhor o problema por favor.
+  - trigger: ":ajustes"
+    replace: Foram realizados alguns ajustes nos equipamentos, por gentileza, teste novamente sua conexão neste momento e nos informe se a situação melhorou. Estamos aqui para garantir que você tenha a melhor experiência possível.
