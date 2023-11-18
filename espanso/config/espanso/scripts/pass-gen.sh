@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# ======================================================= #
-#               GERADOR DE SENHAS                         #
-# ======================================================= #
-
 # Função para mostrar o uso correto do script
 usage() {
     echo "Uso: $0 [-l LENGTH] [-s]"
