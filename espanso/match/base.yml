@@ -122,14 +122,18 @@ matches:
 
   #### Reduzido
   - trigger: ":reduzido"
-    replace: "Sua conexão está reduzida devido a parcela referente ao dia {{clipboard}}, saberia informar se já foi paga?"
+    replace: |
+      Sua conexão está *reduzida* devido a parcela referente ao dia *{{clipboard}}*
+      Saberia informar se já foi paga?
     vars:
       - name: "clipboard"
         type: "clipboard"
 
 #### Suspenso
   - trigger: ":suspenso"
-    replace: "Sua conexão está suspensa devido ao atraso com mais de 30 da parcela referente ao dia {{clipboard}}, saberia informar se já foi paga?"
+    replace: |
+      Sua conexão está *suspensa* devido ao atraso com mais de 30 da parcela referente ao dia *{{clipboard}}*
+      Saberia informar se já foi paga?"
     vars:
       - name: "clipboard"
         type: "clipboard"
