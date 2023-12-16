@@ -110,4 +110,27 @@ matches:
 
   #### Informe melhor o problema por favor.
   - trigger: ":ajustes"
-    replace: Foram realizados alguns ajustes nos equipamentos, por gentileza, teste novamente sua conexão neste momento e nos informe se a situação melhorou. Estamos aqui para garantir que você tenha a melhor experiência possível.
+    replace: Foram realizados alguns ajustes nos equipamentos, por gentileza, teste novamente sua conexão neste momento e informe se está tudo ok.
+
+  #### Tv Box
+  - trigger: ":tvbox"
+    replace: Recomendamos a não utilização de plataformas do tipo, já que a mesma permite a ciculação de produtos não legalizados em sua plataforma compromentendo assim os dados do usuário e sua integridade. No mais não fornecemos suporte ao serviço e futuros atendimentos relacionado a esse serviço não serão continuados.
+
+  #### Rompimento / Local Fora
+  - trigger: ":fora"
+    replace: No momento tivemos um rompimento na localidade de Assaré devido a chamas, ocasionando lentidão na conexão, a conexão será normalizada em breve! Sua localidade está entre as afetadas.
+
+  #### Reduzido
+  - trigger: ":reduzido"
+    replace: "Sua conexão está reduzida devido a parcela referente ao dia {{clipboard}}, saberia informar se já foi paga?"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+
+#### Suspenso
+  - trigger: ":suspenso"
+    replace: "Sua conexão está suspensa devido ao atraso com mais de 30 da parcela referente ao dia {{clipboard}}, saberia informar se já foi paga?"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+
