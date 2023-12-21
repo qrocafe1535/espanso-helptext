@@ -29,7 +29,7 @@
 # --- Auto-restart
 
 # Enable/disable the config auto-reload after a file change is detected.
-# auto_restart: false
+# auto_restart: true
 
 # --- Clipboard threshold
 
@@ -42,3 +42,5 @@
 
 show_notifications: false   # Disable the notifications
 
+#keyboard_layout:
+#  layout: us

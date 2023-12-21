@@ -92,10 +92,10 @@ matches:
     replace: |
       Prezado(a) Cliente, poderia realizar os procedimentos de triagem inicial?
 
-      1 - *Reinicie seus equipamentos:* 
+      1 - *Reinicie seus equipamentos:*
       - Desligue e os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
       - Reinicie os dispositivos que apresentam o problema.
-      2 - *Reconecte e verifique:* 
+      2 - *Reconecte e verifique:*
       - Reconecte os dispositivos.
       - Verifique se o problema persiste.
 
@@ -115,10 +115,6 @@ matches:
   #### Tv Box
   - trigger: ":tvbox"
     replace: Recomendamos a não utilização de plataformas do tipo, já que a mesma permite a ciculação de produtos não legalizados em sua plataforma compromentendo assim os dados do usuário e sua integridade. No mais não fornecemos suporte ao serviço e futuros atendimentos relacionado a esse serviço não serão continuados.
-
-  #### Rompimento / Local Fora
-  - trigger: ":fora"
-    replace: No momento tivemos um rompimento na localidade de Assaré devido a chamas, ocasionando lentidão na conexão, a conexão será normalizada em breve! Sua localidade está entre as afetadas.
 
   #### Reduzido
   - trigger: ":reduzido"
