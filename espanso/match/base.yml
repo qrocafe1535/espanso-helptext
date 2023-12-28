@@ -93,7 +93,7 @@ matches:
       Prezado(a) Cliente, poderia realizar os procedimentos de triagem inicial?
 
       1 - *Reinicie seus equipamentos:*
-      - Desligue e os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
+      - Desligue os equipamentos da tomada por pelo menos 1 minuto e depois ligue novamente.
       - Reinicie os dispositivos que apresentam o problema.
       2 - *Reconecte e verifique:*
       - Reconecte os dispositivos.
@@ -134,3 +134,6 @@ matches:
       - name: "clipboard"
         type: "clipboard"
 
+#### Local expecifico fora
+  - trigger: ":fora"
+    replace: "Desculpe o inconveniente, estamos com problema de falta de energia na localidade, afetado a sua conexão e a de demais clientes, porém estamos trabalhando na solução para restabelecer a conexão o mais rápido possível."
