@@ -152,5 +152,5 @@ matches:
 
 #### Esgotamento de banda
   - trigger: ":tabaco"
-    replace: "Prezado(a) cliente, sua conexão está lenta devido ao fato de que a largura \
-    de banda da sua internet está sendo completamente consumida, o que impacta na velocidade de navegação."
+    replace: "Prezado(a) cliente, sua conexão está lenta devido ao fato de que a velocidade \
+    da sua internet está sendo *completamente consumida*, o que causa lentidão em nossos serviços."
