@@ -84,9 +84,11 @@ matches:
   #### Energia.
   - trigger: ":energia"
     replace: |
-      Prezado(a) Cliente,
-      Informamos que, devido a uma falta de energia na sua localidade, a sua conexão à Internet encontra-se temporariamente indisponível. Estamos trabalhando para resolver a situação o mais rápido possível. Lamentamos o inconveniente e agradecemos pela compreensão.
+      Caro(a) Cliente, queremos informar que houve uma *falta de energia* na área onde você está conectado(a), o que está causando a indisponibilidade dos nossos serviços temporariamente. Estamos trabalhando para resolver essa situação o mais rápido possível. Pedimos desculpas pelo transtorno e agradecemos pela sua compreensão.
+
+      Ainda não temos um prazo exato, mas esperamos que tudo volte ao normal em breve.
       A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!
+
   #### Acesso lento.
   - trigger: ":triagem"
     replace: |
@@ -116,8 +118,8 @@ matches:
   - trigger: ":tvbox"
     replace: Recomendamos a não utilização de plataformas do tipo, já que a mesma permite a ciculação de produtos não legalizados em sua plataforma compromentendo assim os dados do usuário e sua integridade. No mais não fornecemos suporte ao serviço e futuros atendimentos relacionado a esse serviço não serão continuados.
 
-  #### Reduzido
-  - trigger: ":reduzido"
+  #### Reduzido(a)
+  - triggers: [":reduzido",":reduzida"]
     replace: |
       Sua conexão está *reduzida* devido a parcela referente ao dia {{clipboard}}
       Saberia informar se já foi paga?
@@ -137,3 +139,7 @@ matches:
 #### Local expecifico fora
   - trigger: ":fora"
     replace: "Desculpe o inconveniente, estamos com problema de falta de energia na localidade, afetado a sua conexão e a de demais clientes, porém estamos trabalhando na solução para restabelecer a conexão o mais rápido possível."
+
+#### Apocalipse
+  - trigger: ":apoca"
+    replace: "Olá para retorno de sua conexão basta desligar todos os equipamentos por pelo menos *10 minutos*, devido a um problema de grande porte que ocorreu esse procedimento será necessário. Porém após realizado o procedimento sua conexão retornará. A equipe da AraujoSat agradece a sua paciência, {{tempo}}!"
