@@ -66,21 +66,26 @@ matches:
       1 - CPF:
       2 - NOME COMPLETO:
       3 - ENDEREÇO:
+
   ##### ENCERRAR ATENDIMENTO
   - trigger: ":por nada"
     replace: "A equipe da AraujoSat agradece pela sua paciência. {{tempo}}!"
+
   ##### ALGO MAIS?
   - trigger: ":algo mais"
     replace: |
       Por hora te ajudo mais alguma solicitação?
+
   #### Local fora.
   - trigger: ":geral"
     replace: |
       A falta de acesso ou instabilidade na conexão, foi devido a um problema na localidade. Já designamos uma equipe para verificar.
       No momento só aguardar.
+
   ##### Gerador de senhas
   - trigger: ":pass"
     replace: "{{pass}}"
+
   #### Energia.
   - trigger: ":energia"
     replace: |
@@ -112,11 +117,14 @@ matches:
 
   #### Informe melhor o problema por favor.
   - trigger: ":ajustes"
-    replace: Foram realizados alguns ajustes nos equipamentos, por gentileza, teste novamente sua conexão neste momento e informe se está tudo ok.
+    replace: "Foram realizados alguns ajustes nos equipamentos, por gentileza, \
+    teste novamente sua conexão neste momento e informe se está tudo ok."
 
   #### Tv Box
   - trigger: ":tvbox"
-    replace: Recomendamos a não utilização de plataformas do tipo, já que a mesma permite a ciculação de produtos não legalizados em sua plataforma compromentendo assim os dados do usuário e sua integridade. No mais não fornecemos suporte ao serviço e futuros atendimentos relacionado a esse serviço não serão continuados.
+    replace: "Recomendamos a não utilização de plataformas do tipo, já que a mesma permite a ciculação \
+    de produtos não legalizados em sua plataforma compromentendo assim os dados do usuário e sua integridade. \
+    No mais não fornecemos suporte ao serviço e futuros atendimentos relacionado a esse serviço não serão continuados."
 
   #### Reduzido(a)
   - triggers: [":reduzido",":reduzida"]
@@ -138,8 +146,11 @@ matches:
 
 #### Local expecifico fora
   - trigger: ":fora"
-    replace: "Desculpe o inconveniente, estamos com problema de falta de energia na localidade, afetado a sua conexão e a de demais clientes, porém estamos trabalhando na solução para restabelecer a conexão o mais rápido possível."
+    replace: "Desculpe o inconveniente, estamos com problema de falta de energia na localidade, \
+    afetado a sua conexão e a de demais clientes, porém estamos trabalhando na solução para restabelecer \
+    a conexão o mais rápido possível."
 
-#### Apocalipse
-  - trigger: ":apoca"
-    replace: "Olá para retorno de sua conexão basta desligar todos os equipamentos por pelo menos *10 minutos*, devido a um problema de grande porte que ocorreu esse procedimento será necessário. Porém após realizado o procedimento sua conexão retornará. A equipe da AraujoSat agradece a sua paciência, {{tempo}}!"
+#### Esgotamento de banda
+  - trigger: ":tabaco"
+    replace: "Prezado(a) cliente, sua conexão está lenta devido ao fato de que a largura \
+    de banda da sua internet está sendo completamente consumida, o que impacta na velocidade de navegação."
