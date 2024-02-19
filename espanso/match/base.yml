@@ -151,6 +151,11 @@ matches:
     a conexão o mais rápido possível."
 
 #### Esgotamento de banda
-  - trigger: ":tabaco"
+  - trigger: ":velocidade"
     replace: "Prezado(a) cliente, sua conexão está lenta devido ao fato de que a velocidade \
     da sua internet está sendo *completamente consumida*, o que causa lentidão em nossos serviços."
+
+#### Manutenção não programada.
+  - trigger: ":man"
+    replace: "Prezado(a), sua localidade está passando por uma *manutenção não programada*, \
+    sua conexão retornará em breve!! 🙂"
