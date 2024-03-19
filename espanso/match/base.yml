@@ -129,7 +129,7 @@ matches:
   #### Reduzido(a)
   - triggers: [":reduzido",":reduzida"]
     replace: |
-      Sua conexão está *reduzida* devido a parcela referente ao dia {{clipboard}}
+      Sua conexão está *reduzida* devido a mensalidade referente ao dia {{clipboard}}
       Saberia informar se já foi paga?
     vars:
       - name: "clipboard"
@@ -159,3 +159,9 @@ matches:
   - trigger: ":man"
     replace: "Prezado(a), sua localidade está passando por uma *manutenção não programada*, \
     sua conexão retornará em breve!! 🙂"
+
+#### Rompimento em aurora.
+  - trigger: "rompimento:aur"
+    replace: "Umas das nossas fibras gerais foi rompida nessa madrugada ocasionando a falta \
+    de acesso em muitas localidades. Já estamos em prol para que retorne o quanto antes. \
+    No momento ainda não temos prazo de retorno. ⚠️"
