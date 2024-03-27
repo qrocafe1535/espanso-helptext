@@ -15,7 +15,12 @@ This repository was created to store all the texts and scripts that I use in esp
 ## How to install?
 
 - Frist remove the folder in `.config/espanso`
-- After that clone the repository in to a whatever folder in your computer and create a symbolic link
+
+- After that clone the repository in to a whatever folder in your computer.
+```bash
+git clonehttps://github.com/qrocafe1535/espanso-helptext.git
+```
+- Create a symbolic link
 ```bash
 ln -s "$PWD/espanso" "$HOME/.config/espanso"
 ```
