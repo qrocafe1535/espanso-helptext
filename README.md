@@ -18,7 +18,7 @@ This repository was created to store all the texts and scripts that I use in esp
 
 - After that clone the repository in to a whatever folder in your computer.
 ```bash
-git clonehttps://github.com/qrocafe1535/espanso-helptext.git
+git clone https://github.com/qrocafe1535/espanso-helptext.git
 ```
 - Create a symbolic link
 ```bash
