@@ -138,7 +138,7 @@ matches:
 #### Suspenso
   - trigger: ":suspenso"
     replace: |
-      Sua conexão está *suspensa* devido ao atraso com mais de 30 da parcela referente ao dia {{clipboard}}
+      Sua conexão está *suspensa* devido ao atraso com mais de 30 dias da parcela referente ao dia {{clipboard}}
       Saberia informar se já foi paga?"
     vars:
       - name: "clipboard"
